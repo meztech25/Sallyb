@@ -1,7 +1,47 @@
-﻿header {
+﻿body {
+    background-color: #FFFFF0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    max-width: 960px;
+    min-width: 640px;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation {
+    display: block;
+    float: left;
+}
+
+nav.horizontalNavigation {
+    display: block;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FA8072;
+}
+p {
+    border: 2px solid #8B4513;
+    border-style: double;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #FA8072;
+}
+header {
     width: 94%;
-    padding: 1%;
-    background-color: #CD853F;
+    padding: 3%;
+    background-color: #48D1CC;
 }
 
     header #title {
@@ -9,46 +49,42 @@
         color: #fff;
     }
 
-#container {
-    margin: 0 auto;
-    max-width: 1200px;
+
+/* Left Column Styles */
+
+section#leftColumn {
+    background-color: #48D1CC;
+    clear: left;
+    float: left;
+    width: 30%;
 }
 
-h1 {
-    font-size: 40px;
-    color: #333;
-    font-family: "Roboto Slab", sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 0 0 16px;
+/* Right Column Styles */
+
+section#rightColumn {
+    background-color: #48D1CC;
+    clear: right;
+    float: left;
+    width: 30%;
 }
 
-nav > ul {
-    line-height: 2em;
-    list-style-type: none;
-    padding-left: 5px;
+section#rightColumn img {
+    display: block;
+    width: 60%;
 }
 
-body {
-    background: #5F9EA0;
-    font-size: 18px;
-    line-height: 32px;
-    color: #333;
-    word-wrap: break-word !important;
-    font-family: 'Open Sans', sans-serif;
-    width: auto;
-}
-
-p {
-    margin: 0 0 24px;
-    margin: 0 0 2.4rem;
-    padding: 0;
-}
+/* Footer Styles */
 
 footer {
-    width: 94%;
-    padding: 1%;
-    background-color: #CD853F;
-    color: #333;
-    text-align: center;
+    clear: left;
+    background-color: #FA8072;
 }
+
+    footer > nav.verticalNavigation {
+        float: left;
+        width: 22%;
+    }
+    footer::after {
+        clear: both;
+        display: table;
+    }
