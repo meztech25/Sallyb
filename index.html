@@ -1,54 +1,91 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD>
     <meta charset="utf-8" />
-    <title>Sally B.</title>
-    <link href="main.css" rel="stylesheet" />
-</head>
+    <meta name="keywords" content="Sally Bates, Cerritos, Student" />
+
+    <title>Butterfly Salon</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="grid.css">
+
+</HEAD>
+
 <body>
-    <header id="header">
-        <h1>Sally M. Bates</h1>
+    <header>
+        <a target="_top" href="https://flamingtext.com/"><img src="https://blog.flamingtext.com/blog/2021/11/27/flamingtext_com_1638003530_613790031.png"alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a>
+        <br />Logo Design by <a href="https://flamingtext.com/">FlamingText.com</a>
+        <nav class="horizontalNavigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav id="horizontalNavigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="food.html">Favorites</a></li>
-        </ul>
-    </nav>
-    <section id="leftColumn">
-        <h2>A Bit About Myself</h2>
-        <p>
-            Hello, my name is Sally and I'm a returning student. I currently work in the
-            medical field. I'm looking to change career paths. I'm very passionate about web design, learning animation and learn more about art.
-            So I returned to school to obtain my A.A degree and see where this course
-            takes me. I started to draw more and creating short stories, my goal is to publish some web comics, or make stories and make this into a hobbie.
-            I want to enjoy what I do and I know I am not very talented but I want to try and have fun in the process.
-        </p>
-    </section>
-    <section id="rightColumn">
-    <h2>What I like to do on my free time</h2>
-    <ol>
-        <li>Sunggling up with my 2 cats</li>
-        <br />
-        <li>Play video games</li>
-        <br />
-        <li>Reading a variety of genre</li>
-        <br />
-        <li>Writing short stories</li>
-        <br />
-        <li>What movies and anime with my husband</li>
-        <br />
-    </ol>
-       
-       
-    
-    </section>
-    <footer id="verticalNavigation">
-        
-            Last updated on Nov 5 <a href="mailto:sallyb@yahoo.com">Email Me</a>
-        
-    </footer>
+
+    <!-- Begin grid layout using divs -->
+    <!-- row 1 -->
+    <div class="row">
+        <h1>Where hair meets Personality</h1>
+    </div>
+
+    <!-- row 2 -->
+    <div class="row">
+        <div class="col-2-3">
+            <h2>Our Company</h2>
+            <img src="pc_photo6.png" alt="" />
+            <p>
+                Establishment
+            </p>
+            <p>
+                Company's Goals'
+            </p>
+            <!-- begin 2X2 grid -->
+            <div class="row">
+                <h2>About Chocolate</h2>
+
+                <div class="col-1-2">
+                    <h3>Meet Our Hair Stylist</h3>
+                    <p>
+                        Number of People and what they are professional at.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-2">
+                    <h3>Treatmenta</h3>
+                    <p>
+                        HAir treatments for childern, BAck to School specials
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- end 2X2 grid -->
+        <div class="col-1-3">
+            <aside>
+                <h2>FAQ</h2>
+                <dl>
+                    <dt>Types of Services</dt>
+                    <dd>
+                        Services
+                    </dd>
+                    <dt>Color Corrrection?</dt>
+                    <dd>
+                        Details and process.
+                    </dd>
+                </dl>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- row 3 -->
+    <div class="row">
+        <footer>Last update 11/27/2021</footer>
+    </div>
+
 </body>
-</html>
+
+</HTML>
