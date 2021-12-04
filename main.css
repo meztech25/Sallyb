@@ -142,10 +142,6 @@ div[class^="col-"] {
     float: left;
 }
 
-div.col-1-1 {
-    width: 100%;
-}
-
 div.col-1-2 {
     width: 50%;
 }
@@ -156,10 +152,6 @@ div.col-1-3 {
 
 div.col-2-3 {
     width: 66.67%;
-}
-
-div.col-1-4 {
-    width: 25%;
 }
 
 div.col-3-4 {
@@ -173,3 +165,97 @@ div.col-3-4 {
 div {
     outline: 1px solid red;
 }
+
+/* forms style sheet*/
+
+form#survey {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+    form#survey > fieldset {
+        background-color: rgb(241,232,181);
+        border-radius: 20px;
+        -webkit-flex: 1 1 300px;
+        flex: 1 1 300px;
+        font-size: 0.85em;
+        padding: 10px;
+        margin: 10px;
+    }
+
+div.formRow {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+    div.formRow > * {
+        -webkit-flex: 1 1 150px;
+        flex: 1 1 150px;
+    }
+
+
+/* Legend Styles */
+
+legend {
+    background-color: rgb(179,20,25);
+    color: white;
+    padding: 5px;
+}
+
+
+/* Text Area Styles */
+
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 95%;
+}
+
+/* Spinner Styles */
+
+div.formRow > input#dineSpin {
+    -webkit-flex: 0 0 50px;
+    flex: 0 0 50px;
+}
+
+/* Form Button Styles */
+
+div#buttons {
+    text-align: center;
+    width: 100%;
+}
+
+input[type="submit"], input[type="reset"] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
+
+/*gallery*/
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ebb22d;
+    float: left;
+    width: 180px;
+}
+
+    div.gallery:hover {
+        border: 1px solid #fcf7f7;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
